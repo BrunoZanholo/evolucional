@@ -1,0 +1,116 @@
+﻿<div class="login-page">
+    <div class="page-header">
+        <h4>Principal</h4>
+    </div>
+    <hr />
+
+    <div class="row">
+
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <fieldset>
+                        <legend>Botão 1</legend>
+                        <div class="form-group">
+                            <p>
+                                Inserir 1.000 (mil alunos) no banco de dados
+                                <ul>
+                                    <li>
+                                        Cada aluno deverá ter um nome único, portanto, não poderemos ter nomes repetidos no banco de dados
+                                    </li>
+                                    <li>
+                                        O nome do aluno fica a seu critério.
+                                    </li>
+                                </ul>
+                            </p>
+                            <p>
+                                Inserir as seguintes disciplinas no banco de dados:
+                                <ul>
+                                    <li>
+                                        Matemática
+                                    </li>
+                                    <li>
+                                        Português
+                                    </li>
+                                    <li>
+                                        História
+                                    </li>
+                                    <li>
+                                        Geografica
+                                    </li>
+                                    <li>
+                                        Inglês
+                                    </li>
+                                    <li>
+                                        Biologia
+                                    </li>
+                                    <li>
+                                        FIlosofia
+                                    </li>
+                                    <li>
+                                        Física
+                                    </li>
+                                    <li>
+                                        Química
+                                    </li>
+                                </ul>
+                            </p>
+                            <p>
+                                Associar cada uma das disciplinas a cada um dos 1.000 alunos e indicar uma nota, com duas casas decimais, de 0,00 a 10,00, aleatoriamente, para cada associação.
+                            </p>
+                            <p>
+                                Após a conclusão da lógica acima, deve-se exibir na tela mensagem de conclusão do processo.
+                            </p>
+                        </div>
+                        <div class="form-group">
+                            <input class="btn btn-primary" type="button" value="Botão 1" data-loading-text="Processando..." id="btn-1">                            
+                        </div>
+                        <div class="form-group">
+                            <label id="lbl-btn-1"></label>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <fieldset>
+                        <legend>Botão 2</legend>
+                        <div class="form-group">
+                            <p>
+                                Gerar um relatório, no formato Excel (.xls ou .xlsx) contendo as seguintes informações:
+                                <ul>
+                                    <li>
+                                        Nome dos 1.000 alunos
+                                    </li>
+                                    <li>
+                                        Nota de cada uma das disciplinas
+                                    </li>
+                                    <li>
+                                        Média das notas de todas as disciplinas
+                                    </li>
+                                </ul>
+                            </p>
+                            <p>
+                                Após a conclusão da lógica acima, deve-se exibir na tela mensagem de conclusão do processo e possibilidade de fazer download do arquivo gerado.
+                            </p>
+                        </div>
+                        <div class="form-group">
+                            <input class="btn btn-secondary" type="button" value="Botão 2" disabled="disabled" data-loading-text="Processando..." id="btn-2">
+                        </div>
+                        <div class="form-group">
+                            <label id="lbl-btn-2"></label>
+                            <a id="a-download" href="" target="_blank" style="display:none">Clique aqui para baixar</a>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="~/js/principal.js"></script>

@@ -1,0 +1,50 @@
+﻿@model LoginModel
+
+<div class="login-page">
+    <div class="page-header">
+        <h4>Acesso</h4>
+    </div>
+
+    <hr />
+
+    <partial name="_ValidationScriptsPartial" />
+
+    <div class="row">
+
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+
+                    <form asp-route="Acesso">
+                        <input type="hidden" asp-for="ReturnUrl" />
+
+                        <fieldset>
+                            <div class="form-group">
+                                <label asp-for="Usuario"></label>
+                                <input class="form-control" placeholder="Usuário" asp-for="Usuario" autofocus>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Senha"></label>
+                                <input type="password" class="form-control" placeholder="Senha" asp-for="Senha" autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-primary" name="button">Entrar</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            @if (ViewContext.ModelState.IsValid == false)
+            {
+                <div class="alert alert-danger">
+                    <strong>Erro</strong>
+                    <div asp-validation-summary="All" class="danger"></div>
+                </div>
+            }
+        </div>
+    </div>
+    
+</div>
